@@ -15,10 +15,9 @@ module.exports = {
   theme: 'reco',
   themeConfig: { // 博客配置
     type: 'blog',
-    logo: '/images/avatar.jpg',
+    // logo: '/images/avatar.jpg',
     author: 'Leo',
     authorAvatar: '/images/avatar.jpg',
-    subSidebar: 'auto',
     friendLink: [
       // {
       //   title: 'vuepress-theme-reco',
@@ -29,6 +28,11 @@ module.exports = {
     ],
     noFoundPageByTencent: false, // 404 公益
     startYear: '2016',
+    sidebar: 'auto',
+    subSidebar: 'auto',
+    nav: [
+      { text: '时间轴', link: '/timeline/', icon: 'reco-date' }
+    ],
     blogConfig: {
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
