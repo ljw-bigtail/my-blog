@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Leo\'s Blog',
-  description: 'welcome',
+  description: '一枚程序员的日常',
   head:[
     ['link', {rel:'icon', href:'/images/favicon.ico'}]
   ],
@@ -29,6 +29,7 @@ module.exports = {
     noFoundPageByTencent: false, // 404 公益
     startYear: '2016',
     sidebar: 'auto',
+    // navbar: true,
     subSidebar: 'auto',
     nav: [
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' }
@@ -49,5 +50,9 @@ module.exports = {
         },
       ]
     },
-  }
+  },
+  // 插件
+  plugins: [
+    ['vuepress-plugin-mermaidjs'],
+  ],
 }
