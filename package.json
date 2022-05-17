@@ -6,12 +6,17 @@
   "author": "Leo <leo.lu@orderplus.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "vuepress dev docs",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "@vuepress/plugin-pwa": "^1.9.7",
     "vuepress": "^1.9.7",
-    "vuepress-plugin-mermaidjs": "^1.9.0"
+    "vuepress-plugin-boxx": "^0.0.7",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-mermaidjs": "^1.9.0",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
   },
   "dependencies": {
     "vuepress-theme-reco": "^1.6.11"
