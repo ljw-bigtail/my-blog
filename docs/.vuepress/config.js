@@ -2,7 +2,16 @@ module.exports = {
   title: 'Leo\'s Blog',
   description: '一枚程序员的日常',
   head:[
-    ['link', {rel:'icon', href:'/images/favicon.ico'}]
+    ['link', {rel:'icon', href:'/images/favicon.ico'}],
+    // TODO manifest add
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#5463FF' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/images/favicon.ico' }],
+    ['link', { rel: 'mask-icon', href: '/images/favicon.ico', color: '#5463FF' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/images/favicon.ico' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   markdown: {
     lineNumbers: true
@@ -74,9 +83,9 @@ module.exports = {
     ["dynamic-title",
       {
         showIcon: "vuepress/smile.ico",
-        showText: "(/≧▽≦/)欢迎帅哥美女！",
+        showText: "(/≧▽≦/)Hi~！",
         hideIcon: "vuepress/cry.ico",
-        hideText: "(●—●)呜呜，不要走嘛！！",
+        hideText: "(●—●)看这里～看这里！",
         recoverTime: 2000
       }],
       // 更新刷新插件
