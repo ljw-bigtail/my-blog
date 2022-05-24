@@ -2,20 +2,21 @@ module.exports = {
   title: 'Leo\'s Blog',
   description: '一枚程序员的日常',
   head:[
-    ['link', {rel:'icon', href:'/images/favicon.ico'}],
-    // TODO manifest add
+    ['link', {rel:'icon', href:'/favicon.ico'}],
+    //  manifest add
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#5463FF' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'apple-touch-icon', href: '/images/favicon.ico' }],
-    ['link', { rel: 'mask-icon', href: '/images/favicon.ico', color: '#5463FF' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/images/favicon.ico' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }], // 删除默认的苹果工具栏和菜单栏
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }], // 控制状态栏显示样式
+    ['link', { rel: 'apple-touch-icon', href: '/images/avatar.jpg' }], //苹果收藏书签图标
+    ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#000000' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/images/avatar.jpg' }], // windows 磁贴图
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }] // windows 磁贴文字颜色
   ],
   markdown: {
     lineNumbers: true
   },
+  // evergreen: true, // 不用支持老的浏览器
   locales: {
     '/': {
       lang: 'zh-CN'
@@ -68,15 +69,15 @@ module.exports = {
     ['@vuepress/pwa', {
       serviceWorker: true,
       updatePopup: {
-          message: "发现新内容可用",
-          buttonText: "刷新"
+        message: "发现新内容可用",
+        buttonText: "刷新"
       }
     }],
     // 代码复制弹窗插件
     ["vuepress-plugin-nuggets-style-copy", {
       copyText: "复制代码",
       tip: {
-          content: "复制成功!"
+        content: "复制成功!"
       }
     }],
     // 动态标题
@@ -87,14 +88,7 @@ module.exports = {
         hideIcon: "vuepress/cry.ico",
         hideText: "(●—●)看这里～看这里！",
         recoverTime: 2000
-      }],
-      // 更新刷新插件
-      ['@vuepress/pwa', {
-        serviceWorker: true,
-        updatePopup: {
-            message: "发现新内容可用",
-            buttonText: "刷新"
-        }
-    }],
+      }
+    ],
   ],
 }
