@@ -13,6 +13,7 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/images/avatar.jpg' }], // windows 磁贴图
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }] // windows 磁贴文字颜色
   ],
+  base: "/blog/",
   markdown: {
     lineNumbers: true
   },
