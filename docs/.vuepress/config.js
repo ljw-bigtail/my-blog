@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Leo\'s Blog',
+  title: "Leo's Blog",
   description: '一枚程序员的日常',
   head:[
     ['link', {rel:'icon', href:'/favicon.ico'}],
@@ -12,6 +12,8 @@ module.exports = {
     ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#000000' }],
     ['meta', { name: 'msapplication-TileImage', content: '/images/avatar.jpg' }], // windows 磁贴图
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }] // windows 磁贴文字颜色
+    // 禁止缩放
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' }] // windows 磁贴文字颜色
   ],
   base: "/blog/",
   markdown: {
