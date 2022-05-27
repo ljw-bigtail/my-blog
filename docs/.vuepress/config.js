@@ -11,7 +11,7 @@ module.exports = {
     ['link', { rel: 'apple-touch-icon', href: '/images/avatar.jpg' }], //苹果收藏书签图标
     ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#000000' }],
     ['meta', { name: 'msapplication-TileImage', content: '/images/avatar.jpg' }], // windows 磁贴图
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }] // windows 磁贴文字颜色
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }], // windows 磁贴文字颜色
     // 禁止缩放
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' }] // windows 磁贴文字颜色
   ],
