@@ -1,3 +1,6 @@
+@require './palette.styl'
+@require './markdown.styl'
+
 //滚动条样式
 ::-webkit-scrollbar
   width: 6px !important;
@@ -21,7 +24,25 @@
 	background-color:#bbb !important; 
 }
 
-
+header.navbar
+  background: $accentColor;
+  *
+    color: rgba(255, 255, 255, 0.8)!important
+  .suggestions
+    height 60vh
+    overflow auto
+    *
+      color: var(--text-color)!important
+  .nav-dropdown
+    *
+      color: var(--text-color)!important
+    .dropdown-item:hover
+      overflow hidden
+      a
+        transform: translateX(10px)
+        transition: all 0.5s;
+  .links
+    background: transparent
 
 .side-bar
   background rgba(250, 250, 250, 1)
@@ -73,6 +94,7 @@
           .title
             color: var(--color-brand)!important
 
+
 // 搜索框
 .search-box 
   input:focus
@@ -82,9 +104,9 @@
   .personal-img
     border-radius: 4px!important
 
+
 // wide mobile
 @media (max-width: 719px)
-
   .theme-container
     .sidebar-mask
       display: none;
@@ -114,4 +136,4 @@
     & + hr
       border: none
 
-@require './markdown.styl'
+

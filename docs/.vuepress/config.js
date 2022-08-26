@@ -12,8 +12,7 @@ module.exports = {
     ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#000000' }],
     ['meta', { name: 'msapplication-TileImage', content: '/images/avatar.jpg' }], // windows 磁贴图
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }], // windows 磁贴文字颜色
-    // 禁止缩放
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' }] // windows 磁贴文字颜色
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' }] // 禁止缩放
   ],
   base: "/blog/",
   markdown: {
@@ -29,17 +28,18 @@ module.exports = {
   themeConfig: { // 博客配置
     type: 'blog',
     mode: 'light', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
+    modePicker: false, // 默认 true，false 不显示模式调节按钮，true 则显示
     // logo: '/images/avatar.jpg',
     author: 'Leo',
     authorAvatar: '/images/avatar.jpg',
-    friendLink: [
-      // {
-      //   title: 'vuepress-theme-reco',
-      //   desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-      //   logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-      //   link: 'https://vuepress-theme-reco.recoluan.com'
-      // },
-    ],
+    // friendLink: [
+    //   {
+    //     title: 'vuepress-theme-reco',
+    //     desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+    //     logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
+    //     link: 'https://vuepress-theme-reco.recoluan.com'
+    //   },
+    // ],
     noFoundPageByTencent: false, // 404 公益
     startYear: '2016',
     sidebar: 'auto',
