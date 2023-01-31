@@ -93,5 +93,8 @@ module.exports = {
         recoverTime: 2000
       }
     ],
+    // Mini Sandbox
+    // https://buuing.github.io/mini-sandbox/#/
+    ['vuepress-plugin-mini-sandbox'],
   ],
 }

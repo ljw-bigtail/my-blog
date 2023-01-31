@@ -6685,6 +6685,11 @@ mini-css-extract-plugin@0.6.0:
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
 
+mini-sandbox@^0.3.15:
+  version "0.3.17"
+  resolved "https://registry.npmmirror.com/mini-sandbox/-/mini-sandbox-0.3.17.tgz#8b0eee8cd3099a9e2ca3fb355712035fd8ee97d2"
+  integrity sha512-hciXnBHLO5UQ9Ho0OS/0f6ZZnmknF1UjzqW5Aa12XUStmhc5QkAnI7WD4UBDbgJCqUqnYVAF+Oe/mW5ZYVNcqg==
+
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmmirror.com/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
@@ -9640,6 +9645,13 @@ vuepress-plugin-mermaidjs@^1.9.0:
   dependencies:
     "@mbalex99/markdown-it-fence" "^1.0.1"
     mermaid "^8.13.6"
+
+vuepress-plugin-mini-sandbox@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmmirror.com/vuepress-plugin-mini-sandbox/-/vuepress-plugin-mini-sandbox-0.0.3.tgz#eed5413c85af0b833b9ef0696c70b9347fbe655d"
+  integrity sha512-OSugOhLQpVntAC5h16Za3KOAyULAgSJ7jEcras9QA/L8ZpDbrhH6fdZMZccf/xn8bZgXURtok8uNY3aWyyIaZg==
+  dependencies:
+    mini-sandbox "^0.3.15"
 
 vuepress-plugin-nuggets-style-copy@^1.0.3:
   version "1.0.3"
