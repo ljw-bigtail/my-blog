@@ -1,7 +1,7 @@
 ---
 home: true
-bgImage: '/images/bg1.jpg'
+bgImage: '/images/homeBackground.webp'
 bgImageStyle: {
-  height: '80vh'
+  height: '68vh'
 }
 ---
