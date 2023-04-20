@@ -382,7 +382,7 @@ it.next(); // 启动
 > 因为历史原因，相比传统语言，js的知识点更零散，现在看来 js 这几年处在一个飞速发展的时代，由于js的种种特性使得js在更多平台、更多环境中使用，所以 好好学习吧 骚年
 
 ## End.总结
- 
+
 > 下载地址 [《你不知道的JavaScript》上卷](https://cloud.189.cn/t/UfYzu2nqQVRn) 访问码：z4xn
 > 下载地址 [《你不知道的JavaScript》中卷](https://cloud.189.cn/t/RfEjMzJJnm2m) 访问码：qki4
 > 下载地址 [《你不知道的JavaScript》下卷](https://cloud.189.cn/t/NNB7NfEFzmi2) 访问码：fw4h
