@@ -24,6 +24,21 @@
 	background-color:#bbb !important; 
 }
 
+img[alt="npm"]+span
+  display none
+
+@keyframes changeright{       
+  0%{-webkit-transform:rotate(0deg);}
+  50%{-webkit-transform:rotate(180deg);}
+  100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes changeleft{
+  0%{-webkit-transform:rotate(0deg);}
+  50%{-webkit-transform:rotate(-180deg);}
+  100%{-webkit-transform:rotate(-360deg);}
+}
+
 header.navbar
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
@@ -42,6 +57,15 @@ header.navbar
     bottom: 0!important
   .links
     max-width initial!important
+    background: transparent
+    .nav-links
+      .nav-item 
+        a
+          >.iconfont
+            display: none
+  .router-link-active
+    .logo
+      animation:changeright 6s linear infinite
   .suggestions
     height 60vh
     overflow auto
@@ -55,8 +79,8 @@ header.navbar
       a
         transform: translateX(10px)
         transition: all 0.5s;
-  .links
-    background: transparent
+
+
 
 .side-bar
   background rgba(250, 250, 250, 1)
@@ -94,18 +118,30 @@ header.navbar
     .info-wrapper
       flex: 0 0 240px!important
 
+
+
 .tags
   .tag-item
-    background-color: #f6f6f6;
+    background-color: #f6f6f6
     padding: 2px 5px;
     border-radius: 2px;
+  span
+    background-color: #f6f6f6!important
+    color: var(--text-color-sub)!important
+
+
 
 .page
-  padding-right: 8rem!important
+  padding: 5rem 0rem 0rem 0rem!important
+  max-width 880px
+  margin: 0 auto!important
+  position relative
   .side-bar
-    right: 20rem!important
+    // right: calc(calc(100vw - 900px) / 2 - 12rem)!important
+    left: calc(calc(100vw - 900px) / 2 - 12rem)!important
   .page-title
     padding-bottom 0rem!important
+    max-width 880px!important
     &:after
       content: ''
       display: block
@@ -115,6 +151,12 @@ header.navbar
     .title+div 
       .iconfont.reco-account
         display: none
+  .content__default:not(.custom)
+    max-width 880px
+
+
+.iconfont:before
+  color: $accentColor!important
 
 .abstract-wrapper
   .abstract-item

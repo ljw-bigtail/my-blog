@@ -3,6 +3,7 @@ title: Hexo+GitHub=博客
 date: 2016-09-16
 tags: 
   - git
+  - Github Page
   - hexo
 categories: 
   - 碎片
