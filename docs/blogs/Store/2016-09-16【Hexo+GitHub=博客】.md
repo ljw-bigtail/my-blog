@@ -2,9 +2,8 @@
 title: Hexo+GitHub=博客
 date: 2016-09-16
 tags: 
-  - git
   - Github Page
-  - hexo
+  - Hexo
 categories: 
   - 碎片
 ---
@@ -109,6 +108,8 @@ Are you sure you want to continue connecting (yes/no)?
 1. 打开 projextName/_config.yml
 2. 寻找Deployment(Ctrl+F快捷键可以快速查找)，替换此处代码，其中repo后面有两个‘ljw-bigtail’，第一个是你的GitHubID，第二个是刚才设置的库名
 
+> 如果你留意了创建仓库时的页面，也可以在上面找到repo后面应该填入的路径。
+
 ```yml
 #Deployment
 ##Docs: https://hexo.io/docs/deployment.html
@@ -117,8 +118,6 @@ deploy:
     repo: https://github.com/ljw-bigtail/ljw-bigtail.github.io.git
     branch: master
 ```
-
-> 如果你留意了创建仓库时的页面，也可以在上面找到repo后面应该填入的路径。
 
 由于我把这里搞错过一次，导致一次迁移时，之前的库死活连接不上，只能删库重来···
 

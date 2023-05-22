@@ -219,6 +219,8 @@ console.log(a2.b) // 2
 3. 相加，然后用`Math.pow`获取倍数
 4. 相除得到结果
 
+>
+
 ```javascript
 function add(num1, num2){
   num1 = num1.toString()
