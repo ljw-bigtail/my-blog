@@ -27,7 +27,7 @@ module.exports = {
   theme: 'reco',
   themeConfig: { // 博客配置
     type: 'blog',
-    mode: 'light', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
+    mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
     modePicker: false, // 默认 true，false 不显示模式调节按钮，true 则显示
     logo: '/images/avatar.jpg',
     author: '鹿酒',
@@ -47,35 +47,35 @@ module.exports = {
     subSidebar: 'auto',
     nav: [
       { 
-        text: '小院', 
-        link: 'https://www.numplanet.com/', 
-        // icon: 'reco-home' 
-      },
-      { 
         text: '时间轴', 
         link: '/timeline/', 
         // icon: 'reco-date' 
-      }
+      },
+      { 
+        text: '鹿酒的院子', 
+        link: 'https://www.numplanet.com/', 
+        // icon: 'reco-home' 
+      },
     ],
     blogConfig: {
       // category: {
-      //   location: 2, // 在导航栏菜单中所占的位置，默认2
-      //   text: '分类' // 默认文案 “分类”
+      //   // location: 3, // 在导航栏菜单中所占的位置，默认2
+      //   text: '分类', // 默认文案 “分类”
       // },
       tag: {
-        location: 2, // 在导航栏菜单中所占的位置，默认3
+        location: 1, // 在导航栏菜单中所占的位置，默认3
         text: '标签', // 默认文案 “标签”
       },
-      socialLinks: [ // 信息栏展示社交信息
-        {
-          icon: 'reco-home',
-          link: 'https://www.numplanet.com/'
-        },
-        {
-          icon: 'reco-github',
-          link: 'https://github.com/ljw-bigtail'
-        },
-      ]
+      // socialLinks: [ // 信息栏展示社交信息
+      //   {
+      //     icon: 'reco-home',
+      //     link: 'https://www.numplanet.com/'
+      //   },
+      //   {
+      //     icon: 'reco-github',
+      //     link: 'https://github.com/ljw-bigtail'
+      //   },
+      // ]
     },
     // 备案
     // record: 'ICP 备案文案',

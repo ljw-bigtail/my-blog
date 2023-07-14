@@ -55,6 +55,9 @@ header.navbar
     left: 0!important
     right: 0!important
     bottom: 0!important
+  .dropdown-wrapper
+    .iconfont
+      display none
   .links
     max-width initial!important
     background: transparent
@@ -83,7 +86,6 @@ header.navbar
 
 
 .side-bar
-  background rgba(250, 250, 250, 1)
   .sidebar-link
     background transparent
 
@@ -103,6 +105,16 @@ header.navbar
 .home-blog 
   .hero
     margin-top 0!important
+    padding 0!important
+    > div
+      backdrop-filter: blur(4px);
+      background-color rgba(0, 0, 0, 0.2)
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
     h1,
     .description
       color: #fff
@@ -117,16 +129,20 @@ header.navbar
     max-width: 880px!important
     .info-wrapper
       flex: 0 0 240px!important
+      .personal-info-wrapper+h4
+      .personal-info-wrapper+h4+.category-wrapper
+      .personal-info-wrapper+h4+.category-wrapper+hr
+        display none
+
 
 
 
 .tags
   .tag-item
-    background-color: #f6f6f6
     padding: 2px 5px;
     border-radius: 2px;
   span
-    background-color: #f6f6f6!important
+    background-color rgba(86, 86, 86, .5)!important
     color: var(--text-color-sub)!important
 
 
@@ -187,6 +203,8 @@ header.navbar
 
 // 搜索框
 .search-box 
+  .iconfont:before
+    color rgba(255, 255, 255, .2)!important
   input:focus
     display: fixed
 
@@ -197,6 +215,10 @@ header.navbar
 
 // wide mobile
 @media (max-width: 719px)
+  aside.sidebar
+    backdrop-filter: blur(4px);
+    background-color rgba(0, 0, 0, 0.2)
+
   .theme-container
     .sidebar-mask
       display: none;
@@ -226,3 +248,7 @@ header.navbar
       border: none
 
 
+.content__default 
+  p
+    code
+      color $accentColor!important
