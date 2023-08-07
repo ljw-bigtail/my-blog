@@ -22,5 +22,8 @@
   "dependencies": {
     "vuepress-plugin-mini-sandbox": "^0.0.3",
     "vuepress-theme-reco": "^1.6.11"
+  },
+  "engines" : { 
+    "node" : "16.20.0"
   }
 }
