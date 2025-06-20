@@ -82,7 +82,7 @@ ssh -T git@github.com
 验证信息如下，即为成功配置SSH。
 
 ```shell
-Hi ljw-bigtail! You've successfully authenticated, but GitHub does not provide shell access.
+Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 > 2017-12-10更新
@@ -106,7 +106,7 @@ Are you sure you want to continue connecting (yes/no)?
 ### 部署配置
 
 1. 打开 projextName/_config.yml
-2. 寻找Deployment(Ctrl+F快捷键可以快速查找)，替换此处代码，其中repo后面有两个‘ljw-bigtail’，第一个是你的GitHubID，第二个是刚才设置的库名
+2. 寻找Deployment(Ctrl+F快捷键可以快速查找)，替换此处代码，其中repo后面有两个‘xxx’，第一个是你的GitHubID，第二个是刚才设置的库名
 
 > 如果你留意了创建仓库时的页面，也可以在上面找到repo后面应该填入的路径。
 
@@ -115,7 +115,7 @@ Are you sure you want to continue connecting (yes/no)?
 ##Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-    repo: https://github.com/ljw-bigtail/ljw-bigtail.github.io.git
+    repo: https://github.com/xxx/xxx.github.io.git
     branch: master
 ```
 
@@ -124,8 +124,8 @@ deploy:
 ### 修改与发布
 
 1. 每次修改后都应该重新编译并发布。在博客目录文件夹（D:\hexo）中启动Git Bash，输入命令`hexo g`编译，`hexo d`发布；
-2. 这样就可以成功访问你的博客`ljw-bigtail.github.io`;
-3. 现在，我的博客地址为 [http://www.bigtail.com.cn/](http://www.bigtail.com.cn/)，实现方法很简单：申请域名并备案，然后把域名解析到原地址`ljw-bigtail.github.io`对应的ip上（查看方法，cmd中执行ping命令）。
+2. 这样就可以成功访问你的博客`xxx.github.io`;
+3. 现在，我的博客地址为 [http://www.bigtail.com.cn/](http://www.bigtail.com.cn/)，实现方法很简单：申请域名并备案，然后把域名解析到原地址`xxx.github.io`对应的ip上（查看方法，cmd中执行ping命令）。
 
 ## 错误记录
 
@@ -166,10 +166,10 @@ INFO  Copying files from public folder...
 On branch master
 nothing to commit, working tree clean
 remote: Repository not found.
-fatal: repository 'https://github.com/ljw-bigtail/ljw-bigtail.github.com.git/' ot found
+fatal: repository 'https://github.com/xxx/xxx.github.com.git/' ot found
 FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/dcs/troubleshooting.html
 Error: remote: Repository not found.
-fatal: repository 'https://github.com/ljw-bigtail/ljw-bigtail.github.com.git/' ot found
+fatal: repository 'https://github.com/xxx/xxx.github.com.git/' ot found
 ```
 
 我查了好久，但是死活是没有合理的解决办法。

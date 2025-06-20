@@ -16,7 +16,7 @@ JavaScript必须书籍之一！
 
 ## 面对对象
 
-[面对对象 Demo](https://ljw-bigtail.github.io/code_test/blog-code/js-object.html)
+[面对对象 Demo](https://xxx.github.io/code_test/blog-code/js-object.html)
 
 ### 编程风格
 
@@ -148,7 +148,7 @@ installHellper(window, '$')
 
 ## 设计模式
 
-[设计模式 Demo](https://ljw-bigtail.github.io/code_test/blog-code/js-model.html)
+[设计模式 Demo](https://xxx.github.io/code_test/blog-code/js-model.html)
 
 ### 预置函数
 
